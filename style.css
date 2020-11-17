@@ -25,11 +25,30 @@ body {
         height: 200px;
         transform: rotate(0) scale(1);
     }
+
     to {
         background-color: green;
         color: yellow;
         font-size: 1.5rem;
         height: 400px;
         transform: rotate(45deg) scale(1.5);
+    }
+}
+
+#gaudoi {
+    height: 300px;
+    width: 40%;
+    background-color: blue;
+    animation: bouge 10s infinite alternate;
+
+}
+
+@keyframes bouge {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translate(100%);
     }
 }
